@@ -6,6 +6,10 @@ IFS=$'\n\t'
 ln -sf $HOME/dotfiles/.gitconfig $HOME/.gitconfig
 ln -sf $HOME/dotfiles/.zshrc $HOME/.zshrc
 
+# Install packages
+sudo apt-get -qq update
+sudo apt-get -qq --yes install silversearcher-ag htop net-tools tig
+
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc
 

@@ -7,8 +7,8 @@ ln -sf $HOME/dotfiles/.gitconfig $HOME/.gitconfig
 ln -sf $HOME/dotfiles/.zshrc $HOME/.zshrc
 
 # Install packages
-# sudo apt-get -qq update
-# sudo apt-get -qq --yes install silversearcher-ag htop net-tools tig
+sudo apt-get -qq update
+sudo apt-get -qq --yes install silversearcher-ag htop net-tools tig
 
 # Install powerlevel10k
 POWERLEVEL10K_DIR="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
@@ -22,7 +22,7 @@ fi
 rm -rf "${POWERLEVEL10K_DIR}/gitstatus"
 
 # Install syntax highlighting
-ZSH_SYNTAX_DIR="${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
+ZSH_SYNTAX_DIR="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
 
 if [ ! -d "${ZSH_SYNTAX_DIR}" ]; then
   mkdir -p "${ZSH_SYNTAX_DIR}"

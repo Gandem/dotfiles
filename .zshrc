@@ -125,9 +125,6 @@ export CGO_CXXFLAGS_ALLOW="-fno-builtin-memcmp|-lpthread"
 # GPG
 export GPG_TTY=$(tty)
 
-# Gitlab
-export GITLAB_TOKEN=$(pass gitlab_token)
-
 # AWS
 # store key in the login keychain instead of aws-vault managing a hidden keychain
 export AWS_VAULT_KEYCHAIN_NAME=login

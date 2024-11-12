@@ -28,6 +28,3 @@ if [ ! -d "${ZSH_SYNTAX_DIR}" ]; then
   mkdir -p "${ZSH_SYNTAX_DIR}"
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_SYNTAX_DIR}"
 fi
-
-# Setup otel profiling agent
-setup-repo otel-profiling-agent

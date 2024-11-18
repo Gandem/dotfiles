@@ -8,7 +8,7 @@ ln -sf $HOME/dotfiles/.zshrc $HOME/.zshrc
 
 # Install packages
 sudo apt-get -qq update
-sudo apt-get -qq --yes install silversearcher-ag htop net-tools tig fzf
+sudo apt-get -qq --yes install silversearcher-ag htop net-tools tig fzf coreutils
 
 # Install powerlevel10k
 POWERLEVEL10K_DIR="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"

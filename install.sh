@@ -28,3 +28,11 @@ if [ ! -d "${ZSH_SYNTAX_DIR}" ]; then
   mkdir -p "${ZSH_SYNTAX_DIR}"
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_SYNTAX_DIR}"
 fi
+
+# Install goenv
+GOENV_DIR="${HOME}/.goenv"
+
+if [ ! -d "${GOENV_DIR}" ]; then
+  mkdir -p "${GOENV_DIR}"
+  git clone https://github.com/go-nv/goenv.git "${GOENV_DIR}"
+fi

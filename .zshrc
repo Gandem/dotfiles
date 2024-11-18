@@ -159,3 +159,12 @@ alias du='du -h'
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 zstyle ':completion:*' matcher-list 'r:|=*'
+
+# Setup go env
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
+export GOENV_AUTO_INSTALL=1
+export GOENV_GOMOD_VERSION_ENABLE=1
